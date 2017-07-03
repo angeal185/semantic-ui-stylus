@@ -1,0 +1,847 @@
+.ui
+    &.table
+        width 100%
+        background #FFF
+        margin 1em 0
+        border 1px solid rgba(34, 36, 38, .15)
+        box-shadow none
+        border-radius .28571429rem
+        text-align left
+        color rgba(0, 0, 0, .87)
+        border-collapse separate
+        border-spacing 0
+        font-size 1em
+        &:first-child
+            margin-top 0
+        &:last-child
+            margin-bottom 0
+        thead
+            box-shadow none
+            th
+                cursor auto
+                background #F9FAFB
+                text-align inherit
+                color rgba(0, 0, 0, .87)
+                padding .92857143em .78571429em
+                vertical-align inherit
+                font-style none
+                font-weight 700
+                text-transform none
+                border-bottom 1px solid rgba(34, 36, 38, .1)
+                border-left none
+            tr
+                & > th
+                    &:first-child
+                        border-left none
+                &:first-child
+                    & > th
+                        &:first-child
+                            border-radius .28571429rem 0 0
+                        &:last-child
+                            border-radius 0 .28571429rem 0 0
+                        &:only-child
+                            border-radius .28571429rem .28571429rem 0 0
+        tfoot
+            box-shadow none
+            th
+                cursor auto
+                border-top 1px solid rgba(34, 36, 38, .15)
+                background #F9FAFB
+                text-align inherit
+                color rgba(0, 0, 0, .87)
+                padding .78571429em
+                vertical-align middle
+                font-style normal
+                font-weight 400
+                text-transform none
+            tr
+                & > th
+                    &:first-child
+                        border-left none
+                &:first-child
+                    & > th
+                        &:first-child
+                            border-radius 0 0 0 .28571429rem
+                        &:last-child
+                            border-radius 0 0 .28571429rem
+                        &:only-child
+                            border-radius 0 0 .28571429rem .28571429rem
+        tr
+            td
+                border-top 1px solid rgba(34, 36, 38, .1)
+            &:first-child
+                td
+                    border-top none
+        td
+            padding .78571429em
+            text-align inherit
+        & > .icon
+            vertical-align baseline
+            &:only-child
+                margin 0
+        &.segment
+            padding 0
+            &:after
+                display none
+            &.stacked
+                &:after
+                    display block
+        tbody
+            tr
+                td
+                    &.selectable
+                        padding 0
+                        & > a
+                            &:not(.ui)
+                                display block
+                                color inherit
+                                padding .78571429em
+    &.structured
+        &.table
+            border-collapse collapse
+            thead
+                th
+                    border-left none
+                    border-right none
+        &.sortable
+            &.table
+                thead
+                    th
+                        border-left 1px solid rgba(34, 36, 38, .15)
+                        border-right 1px solid rgba(34, 36, 38, .15)
+        &.basic
+            &.table
+                th
+                    border-left none
+                    border-right none
+    &.definition
+        &.table
+            thead
+                &:not(.full-width)
+                    th
+                        &:first-child
+                            pointer-events none
+                            background 0 0
+                            font-weight 400
+                            color rgba(0, 0, 0, .4)
+                            box-shadow -1px -1px 0 1px #FFF
+            tfoot
+                &:not(.full-width)
+                    th
+                        &:first-child
+                            pointer-events none
+                            background 0 0
+                            font-weight rgba(0, 0, 0, .4)
+                            color normal
+                            box-shadow 1px 1px 0 1px #FFF
+    &.celled
+        &.definition
+            &.table
+                thead
+                    &:not(.full-width)
+                        th
+                            &:first-child
+                                box-shadow 0 -1px 0 1px #FFF
+                tfoot
+                    &:not(.full-width)
+                        th
+                            &:first-child
+                                box-shadow 0 1px 0 1px #FFF
+    &.fixed
+        &.table
+            table-layout fixed
+    &.attached
+        &.table
+            top 0
+            bottom 0
+            border-radius 0
+            margin 0 -1px
+            width calc(100% + 2px)
+            max-width calc(100% + 2px)
+            box-shadow none
+            border 1px solid #D4D4D5
+        & + .ui
+            &.attached
+                &.table
+                    &:not(.top)
+                        border-top none
+    &.table[class*="top attached"]:first-child
+        margin-top 0
+    &.striped
+        &.selectable
+            &.selectable
+                &.selectable
+                    &.table
+                        tbody
+                            tr
+                                &.active
+                                    &:hover
+                                        background #EFEFEF!important
+                                        color rgba(0, 0, 0, .95)!important
+    &.red
+        &.table
+            border-top .2em solid #DB2828
+    &.inverted
+        &.red
+            &.table
+                background-color #DB2828!important
+                color #FFF!important
+        &.orange
+            &.table
+                background-color #F2711C!important
+                color #FFF!important
+        &.yellow
+            &.table
+                background-color #FBBD08!important
+                color #FFF!important
+        &.olive
+            &.table
+                background-color #B5CC18!important
+                color #FFF!important
+        &.green
+            &.table
+                background-color #21BA45!important
+                color #FFF!important
+        &.teal
+            &.table
+                background-color #00B5AD!important
+                color #FFF!important
+        &.blue
+            &.table
+                background-color #2185D0!important
+                color #FFF!important
+        &.violet
+            &.table
+                background-color #6435C9!important
+                color #FFF!important
+        &.purple
+            &.table
+                background-color #A333C8!important
+                color #FFF!important
+        &.pink
+            &.table
+                background-color #E03997!important
+                color #FFF!important
+        &.brown
+            &.table
+                background-color #A5673F!important
+                color #FFF!important
+        &.grey
+            &.table
+                background-color #767676!important
+                color #FFF!important
+        &.black
+            &.table
+                background-color #1B1C1D!important
+                color #FFF!important
+        &.sortable
+            &.table
+                thead
+                    th
+                        border-left-color transparent
+                        border-right-color transparent
+                        &.sorted
+                            background -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .15)
+                            background linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .15)
+                            color #fff
+                        &:hover
+                            background -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .08)
+                            background linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .08)
+                            color #fff
+        &.table
+            background #333
+            color rgba(255, 255, 255, .9)
+            border none
+            th
+                background-color rgba(0, 0, 0, .15)
+                border-color rgba(255, 255, 255, .1)!important
+                color rgba(255, 255, 255, .9)
+            tr
+                td
+                    border-color rgba(255, 255, 255, .1)!important
+        &.definition
+            &.table
+                tr
+                    td
+                        &:first-child
+                            background rgba(255, 255, 255, .02)
+                            color #fff
+    &.orange
+        &.table
+            border-top .2em solid #F2711C
+    &.yellow
+        &.table
+            border-top .2em solid #FBBD08
+    &.olive
+        &.table
+            border-top .2em solid #B5CC18
+    &.green
+        &.table
+            border-top .2em solid #21BA45
+    &.teal
+        &.table
+            border-top .2em solid #00B5AD
+    &.blue
+        &.table
+            border-top .2em solid #2185D0
+    &.violet
+        &.table
+            border-top .2em solid #6435C9
+    &.purple
+        &.table
+            border-top .2em solid #A333C8
+    &.pink
+        &.table
+            border-top .2em solid #E03997
+    &.brown
+        &.table
+            border-top .2em solid #A5673F
+    &.grey
+        &.table
+            border-top .2em solid #767676
+    &.black
+        &.table
+            border-top .2em solid #1B1C1D
+    &.one
+        &.column
+            &.table
+                td
+                    width 100%
+    &.two
+        &.column
+            &.table
+                td
+                    width 50%
+    &.three
+        &.column
+            &.table
+                td
+                    width 33.33333333%
+    &.four
+        &.column
+            &.table
+                td
+                    width 25%
+    &.five
+        &.column
+            &.table
+                td
+                    width 20%
+    &.six
+        &.column
+            &.table
+                td
+                    width 16.66666667%
+    &.seven
+        &.column
+            &.table
+                td
+                    width 14.28571429%
+    &.eight
+        &.column
+            &.table
+                td
+                    width 12.5%
+    &.nine
+        &.column
+            &.table
+                td
+                    width 11.11111111%
+    &.ten
+        &.column
+            &.table
+                td
+                    width 10%
+    &.eleven
+        &.column
+            &.table
+                td
+                    width 9.09090909%
+    &.twelve
+        &.column
+            &.table
+                td
+                    width 8.33333333%
+    &.thirteen
+        &.column
+            &.table
+                td
+                    width 7.69230769%
+    &.fourteen
+        &.column
+            &.table
+                td
+                    width 7.14285714%
+    &.fifteen
+        &.column
+            &.table
+                td
+                    width 6.66666667%
+    &.sortable
+        &.table
+            thead
+                th
+                    cursor pointer
+                    white-space nowrap
+                    border-left 1px solid rgba(34, 36, 38, .15)
+                    color rgba(0, 0, 0, .87)
+                    &:first-child
+                        border-left none
+                    &:after
+                        display none
+                        font-style normal
+                        font-weight 400
+                        text-decoration inherit
+                        content ''
+                        height 1em
+                        width auto
+                        opacity .8
+                        margin 0 0 0 .5em
+                        font-family Icons
+                    &.ascending
+                        &:after
+                            content '\f0d8'
+                    &.descending
+                        &:after
+                            content '\f0d7'
+                    &:hover
+                        background rgba(0, 0, 0, .05)
+                        color rgba(0, 0, 0, .8)
+                    &.sorted
+                        background rgba(0, 0, 0, .05)
+                        color rgba(0, 0, 0, .95)
+                        &:after
+                            display inline-block
+                        &:hover
+                            background rgba(0, 0, 0, .05)
+                            color rgba(0, 0, 0, .95)
+            th
+                &.disabled
+                    &:hover
+                        cursor auto
+                        color rgba(40, 40, 40, .3)
+    &.collapsing
+        &.table
+            width auto
+    &.basic
+        &.table
+            background 0 0
+            border 1px solid rgba(34, 36, 38, .15)
+            box-shadow none
+            th
+                background 0 0
+                border-left none
+            tbody
+                tr
+                    border-bottom 1px solid rgba(0, 0, 0, .1)
+            td
+                background 0 0
+        &.striped
+            &.table
+                tbody
+                    tr
+                        &:nth-child(2n)
+                            background-color rgba(0, 0, 0, .05)!important
+    &.compact
+        &.table
+            th
+                padding-left .7em
+                padding-right .7em
+            td
+                padding .5em .7em
+    &.small
+        &.table
+            font-size .9em
+    &.large
+        &.table
+            font-size 1.1em
+
+.ui.table td,
+.ui.table th
+    -webkit-transition background .1s ease, color .1s ease
+    transition background .1s ease, color .1s ease
+
+@media only screen and (max-width:767px)
+    .ui
+        &.table
+            &:not(.unstackable)
+                width 100%
+                padding 0
+                tr
+                    padding-top 1em
+                    padding-bottom 1em
+                    box-shadow 0 -1px 0 0 rgba(0, 0, 0, .1) inset!important
+        &.definition
+            &.table
+                &:not(.unstackable)
+                    thead
+                        th
+                            &:first-child
+                                box-shadow none!important
+
+
+@media only screen and (max-width:767px)     
+    .ui.table:not(.unstackable) tbody,
+    .ui.table:not(.unstackable) tr,
+    .ui.table:not(.unstackable) tr>td,
+    .ui.table:not(.unstackable) tr>th
+        width auto!important
+        display block!important
+
+
+@media only screen and (max-width:767px)     
+    .ui.table:not(.unstackable) tfoot,
+    .ui.table:not(.unstackable) thead
+        display block
+
+
+@media only screen and (max-width:767px)     
+    .ui.table:not(.unstackable) tr>td,
+    .ui.table:not(.unstackable) tr>th
+        background 0 0
+        border none!important
+        padding .25em .75em!important
+        box-shadow none!important
+
+
+@media only screen and (max-width:767px)     
+    .ui.table:not(.unstackable) td:first-child,
+    .ui.table:not(.unstackable) th:first-child
+        font-weight 700
+
+.ui.table td .image,
+.ui.table td .image img,
+.ui.table th .image,
+.ui.table th .image img
+    max-width none
+
+.ui.structured.celled.table tr td,
+.ui.structured.celled.table tr th
+    border-left 1px solid rgba(34, 36, 38, .1)
+    border-right 1px solid rgba(34, 36, 38, .1)
+
+.ui.definition.table tr td.definition,
+.ui.definition.table tr td:first-child:not(.ignored)
+    background rgba(0, 0, 0, .03)
+    font-weight 700
+    color rgba(0, 0, 0, .95)
+    text-transform ''
+    box-shadow ''
+    text-align ''
+    font-size 1em
+    padding-left ''
+    padding-right ''
+
+.ui.definition.table td:nth-child(2),
+.ui.definition.table tfoot:not(.full-width) th:nth-child(2),
+.ui.definition.table thead:not(.full-width) th:nth-child(2)
+    border-left 1px solid rgba(34, 36, 38, .15)
+
+.ui.table td.positive,
+.ui.table tr.positive
+    box-shadow 0 0 0 #A3C293 inset
+    background #FCFFF5!important
+    color #2C662D!important
+
+.ui.table td.error,
+.ui.table td.negative,
+.ui.table tr.error,
+.ui.table tr.negative
+    box-shadow 0 0 0 #E0B4B4 inset
+    background #FFF6F6!important
+    color #9F3A38!important
+
+.ui.table td.warning,
+.ui.table tr.warning
+    box-shadow 0 0 0 #C9BA9B inset
+    background #FFFAF3!important
+    color #573A08!important
+
+.ui.table td.active,
+.ui.table tr.active
+    box-shadow 0 0 0 rgba(0, 0, 0, .87) inset
+    background #E0E0E0!important
+    color rgba(0, 0, 0, .87)!important
+
+.ui.table tr td.disabled,
+.ui.table tr.disabled td,
+.ui.table tr.disabled:hover,
+.ui.table tr:hover td.disabled
+    pointer-events none
+    color rgba(40, 40, 40, .3)
+
+
+@media only screen and (max-width:991px)     
+    .ui[class*="tablet stackable"].table,
+    .ui[class*="tablet stackable"].table tbody,
+    .ui[class*="tablet stackable"].table tr,
+    .ui[class*="tablet stackable"].table tr>td,
+    .ui[class*="tablet stackable"].table tr>th
+        width 100%!important
+        display block!important
+
+@media only screen and (max-width:991px)
+    .ui[class*="tablet stackable"].table
+        padding 0
+        tr
+            padding-top 1em
+            padding-bottom 1em
+            box-shadow 0 -1px 0 0 rgba(0, 0, 0, .1) inset!important
+    .ui
+        &.definition[class*="tablet stackable"].table
+            thead
+                th
+                    &:first-child
+                        box-shadow none!important
+
+
+@media only screen and (max-width:991px)     
+    .ui[class*="tablet stackable"].table tfoot,
+    .ui[class*="tablet stackable"].table thead
+        display block
+
+
+@media only screen and (max-width:991px)     
+    .ui[class*="tablet stackable"].table tr>td,
+    .ui[class*="tablet stackable"].table tr>th
+        background 0 0
+        border none!important
+        padding .25em .75em
+        box-shadow none!important
+
+.ui.table [class*="left aligned"],
+.ui.table[class*="left aligned"]
+    text-align left
+
+.ui.table [class*="center aligned"],
+.ui.table[class*="center aligned"]
+    text-align center
+
+.ui.table [class*="right aligned"],
+.ui.table[class*="right aligned"]
+    text-align right
+
+.ui.table [class*="top aligned"],
+.ui.table[class*="top aligned"]
+    vertical-align top
+
+.ui.table [class*="middle aligned"],
+.ui.table[class*="middle aligned"]
+    vertical-align middle
+
+.ui.table [class*="bottom aligned"],
+.ui.table[class*="bottom aligned"]
+    vertical-align bottom
+
+.ui.table td.collapsing,
+.ui.table th.collapsing
+    width 1px
+    white-space nowrap
+
+.ui.fixed.table td,
+.ui.fixed.table th
+    overflow hidden
+    text-overflow ellipsis
+
+.ui.selectable.table tbody tr:hover,
+.ui.table tbody tr td.selectable:hover
+    background rgba(0, 0, 0, .05)!important
+    color rgba(0, 0, 0, .95)!important
+
+.ui.inverted.table tbody tr td.selectable:hover,
+.ui.selectable.inverted.table tbody tr:hover
+    background rgba(255, 255, 255, .08)!important
+    color #fff!important
+
+.ui.selectable.table tr.error:hover,
+.ui.selectable.table tr:hover td.error,
+.ui.table tr td.selectable.error:hover
+    background #ffe7e7!important
+    color #943634!important
+
+.ui.selectable.table tr.warning:hover,
+.ui.selectable.table tr:hover td.warning,
+.ui.table tr td.selectable.warning:hover
+    background #fff4e4!important
+    color #493107!important
+
+.ui.selectable.table tr.active:hover,
+.ui.selectable.table tr:hover td.active,
+.ui.table tr td.selectable.active:hover
+    background #E0E0E0!important
+    color rgba(0, 0, 0, .87)!important
+
+.ui.selectable.table tr.positive:hover,
+.ui.selectable.table tr:hover td.positive,
+.ui.table tr td.selectable.positive:hover
+    background #f7ffe6!important
+    color #275b28!important
+
+.ui.selectable.table tr.negative:hover,
+.ui.selectable.table tr:hover td.negative,
+.ui.table tr td.selectable.negative:hover
+    background #ffe7e7!important
+    color #943634!important
+
+.ui[class*="top attached"].table
+    bottom 0
+    margin-bottom 0
+    top 0
+    margin-top 1em
+    border-radius .28571429rem .28571429rem 0 0
+
+.ui[class*="bottom attached"].table
+    bottom 0
+    margin-top 0
+    top 0
+    margin-bottom 1em
+    box-shadow none, none
+    border-radius 0 0 .28571429rem .28571429rem
+    &:last-child
+        margin-bottom 0
+
+.ui.striped.table tbody tr:nth-child(2n),
+.ui.striped.table>tr:nth-child(2n)
+    background-color rgba(0, 0, 50, .02)
+
+.ui.inverted.striped.table tbody tr:nth-child(2n),
+.ui.inverted.striped.table>tr:nth-child(2n)
+    background-color rgba(255, 255, 255, .05)
+
+.ui.table [class*="single line"],
+.ui.table[class*="single line"]
+    white-space nowrap
+
+.ui.sixteen.column.table td,
+.ui.table td.one.wide,
+.ui.table th.one.wide
+    width 6.25%
+
+.ui.table td.two.wide,
+.ui.table th.two.wide
+    width 12.5%
+
+.ui.table td.three.wide,
+.ui.table th.three.wide
+    width 18.75%
+
+.ui.table td.four.wide,
+.ui.table th.four.wide
+    width 25%
+
+.ui.table td.five.wide,
+.ui.table th.five.wide
+    width 31.25%
+
+.ui.table td.six.wide,
+.ui.table th.six.wide
+    width 37.5%
+
+.ui.table td.seven.wide,
+.ui.table th.seven.wide
+    width 43.75%
+
+.ui.table td.eight.wide,
+.ui.table th.eight.wide
+    width 50%
+
+.ui.table td.nine.wide,
+.ui.table th.nine.wide
+    width 56.25%
+
+.ui.table td.ten.wide,
+.ui.table th.ten.wide
+    width 62.5%
+
+.ui.table td.eleven.wide,
+.ui.table th.eleven.wide
+    width 68.75%
+
+.ui.table td.twelve.wide,
+.ui.table th.twelve.wide
+    width 75%
+
+.ui.table td.thirteen.wide,
+.ui.table th.thirteen.wide
+    width 81.25%
+
+.ui.table td.fourteen.wide,
+.ui.table th.fourteen.wide
+    width 87.5%
+
+.ui.table td.fifteen.wide,
+.ui.table th.fifteen.wide
+    width 93.75%
+
+.ui.table td.sixteen.wide,
+.ui.table th.sixteen.wide
+    width 100%
+
+.ui.sortable.table thead th.sorted,
+.ui.sortable.table thead th.sorted:hover
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+
+.ui.inverted.table tr td.disabled,
+.ui.inverted.table tr.disabled td,
+.ui.inverted.table tr.disabled:hover td,
+.ui.inverted.table tr:hover td.disabled
+    pointer-events none
+    color rgba(225, 225, 225, .3)
+
+.ui.inverted.definition.table tfoot:not(.full-width) th:first-child,
+.ui.inverted.definition.table thead:not(.full-width) th:first-child
+    background #FFF
+
+.ui.basic.table tfoot,
+.ui.basic.table thead
+    box-shadow none
+
+.ui[class*="very basic"].table
+        border none
+        &:not(.sortable):not(.striped)
+            thead
+                tr
+                    &:first-child
+                        th
+                            padding-top 0
+                            
+.ui[class*="very padded"].table
+        th
+            padding-left 1.5em
+            padding-right 1.5em
+        td
+            padding 1.5em
+            
+.ui[class*="very compact"].table
+        th
+            padding-left .6em
+            padding-right .6em
+        td
+            padding .4em .6em
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) td,
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th
+    padding ''
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child,
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:first-child
+    padding-left 0
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child,
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:last-child
+    padding-right 0
+
+.ui.celled.table tr td,
+.ui.celled.table tr th
+    border-left 1px solid rgba(34, 36, 38, .1)
+
+.ui.celled.table tr td:first-child,
+.ui.celled.table tr th:first-child
+    border-left none
+
+.ui.padded.table td,
+.ui.padded.table th
+    padding 1em
