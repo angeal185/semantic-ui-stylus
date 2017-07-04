@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angeal185/semanticUI-stylus.git"
+    "url": "git+https://github.com/angeal185/semantic-ui-stylus.git"
   },
   "keywords": [
     "stylus"
@@ -13,9 +13,9 @@
   "author": "ben eaves",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angeal185/semanticUI-stylus/issues"
+    "url": "https://github.com/angeal185/semantic-ui-stylus/issues"
   },
-  "homepage": "https://github.com/angeal185/semanticUI-stylus#readme",
+  "homepage": "https://github.com/angeal185/semantic-ui-stylus#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-stylus": "^2.6.0"
