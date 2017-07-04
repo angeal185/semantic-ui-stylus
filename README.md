@@ -9,7 +9,7 @@ $ bower install semantic-ui-stylus --save-dev
 ```
 
 ### info
-A complete, fully functional and unaltered convert of the default semantic.css to stylus.  
+A complete convert of the default semantic.css to stylus.  
 No learning curve and no repeats. build it how you want it or just use it as an easy way to exclude unused css.
 
 ### Instructions
