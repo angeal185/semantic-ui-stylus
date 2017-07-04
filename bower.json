@@ -1,0 +1,23 @@
+{
+  "name": "semantic-ui-stylus",
+  "version": "1.0.0",
+  "authors": [
+    "ben eaves"
+  ],
+  "description": "stylus port of semantic-ui",
+  "main": "semantic.styl",
+  "keywords": [
+    "stylus",
+    "semantic",
+	"semantic-ui",
+    "port",
+    "stylus-semantic-ui",
+    "semantic-ui-stylus"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/angeal185/semantic-ui-stylus",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angeal185/semantic-ui-stylus.git"
+  }
+}
