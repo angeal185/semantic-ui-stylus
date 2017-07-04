@@ -17,12 +17,12 @@ semantic.css has been converted, broken down into smaller .styl includes and the
 
 Simply edit as you see fit, comment out or remove unwanted includes in `semantic.styl` file then compile.
 
-````
-stylus semantic.styl -o dist/css
+````sh
+$ stylus semantic.styl -o dist/css
 ````
 
-or
-````
-gulp
+or with gulp
+````sh
+$ gulp
 ````
 done.
