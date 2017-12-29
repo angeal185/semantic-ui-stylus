@@ -3,26 +3,26 @@
         position relative
         font-size 1em
         & > .prompt
-            margin 0
-            outline 0
+            margin 0em
+            outline none
             -webkit-appearance none
             -webkit-tap-highlight-color rgba(255, 255, 255, 0)
             text-shadow none
             font-style normal
-            font-weight 400
+            font-weight normal
             line-height 1.21428571em
-            padding .67857143em 1em
+            padding 0.67857143em 1em
             font-size 1em
-            background #FFF
-            border 1px solid rgba(34, 36, 38, .15)
-            color rgba(0, 0, 0, .87)
-            box-shadow 0 0 transparent inset
-            -webkit-transition background-color .1s ease, color .1s ease, box-shadow .1s ease, border-color .1s ease
-            transition background-color .1s ease, color .1s ease, box-shadow .1s ease, border-color .1s ease
+            background #FFFFFF
+            border 1px solid rgba(34, 36, 38, 0.15)
+            color rgba(0, 0, 0, 0.87)
+            box-shadow 0em 0em 0em 0em transparent inset
+            -webkit-transition background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease
+            transition background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease
             &:focus
-                border-color rgba(34, 36, 38, .35)
-                background #FFF
-                color rgba(0, 0, 0, .95)
+                border-color rgba(34, 36, 38, 0.35)
+                background #FFFFFF
+                color rgba(0, 0, 0, 0.95)
         .prompt
             border-radius 500rem
             & ~ .search
@@ -32,83 +32,88 @@
             display none
             position absolute
             top 100%
-            left 0
+            left 0%
             -webkit-transform-origin center top
             transform-origin center top
             white-space normal
-            background #FFF
-            margin-top .5em
+            background #FFFFFF
+            margin-top 0.5em
             width 18em
-            border-radius .28571429rem
-            box-shadow 0 2px 4px 0 rgba(34, 36, 38, .12), 0 2px 10px 0 rgba(34, 36, 38, .15)
+            border-radius 0.28571429rem
+            box-shadow 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15)
             border 1px solid #D4D4D5
             z-index 998
             & > :first-child
-                border-radius .28571429rem .28571429rem 0 0
+                border-radius 0.28571429rem 0.28571429rem 0em 0em
             & > :last-child
-                border-radius 0 0 .28571429rem .28571429rem
+                border-radius 0em 0em 0.28571429rem 0.28571429rem
             .result
                 cursor pointer
                 display block
                 overflow hidden
                 font-size 1em
-                padding .85714286em 1.14285714em
-                color rgba(0, 0, 0, .87)
+                padding 0.85714286em 1.14285714em
+                color rgba(0, 0, 0, 0.87)
                 line-height 1.33
-                border-bottom 1px solid rgba(34, 36, 38, .1)
+                border-bottom 1px solid rgba(34, 36, 38, 0.1)
                 &:last-child
-                    border-bottom none!important
+                    border-bottom none !important
                 .image
                     float right
                     overflow hidden
-                    background 0 0
+                    background none
                     width 5em
                     height 3em
-                    border-radius .25em
+                    border-radius 0.25em
                     img
                         display block
                         width auto
                         height 100%
                     & + .content
-                        margin 0 6em 0 0
+                        margin 0em 6em 0em 0em
                 .title
-                    margin -.14285714em 0 0
-                    font-family Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif
-                    font-weight 700
+                    margin -0.14285714em 0em 0em
+                    font-family 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif
+                    font-weight bold
                     font-size 1em
-                    color rgba(0, 0, 0, .85)
+                    color rgba(0, 0, 0, 0.85)
                 .description
                     margin-top 0
-                    font-size .92857143em
-                    color rgba(0, 0, 0, .4)
+                    font-size 0.92857143em
+                    color rgba(0, 0, 0, 0.4)
                 .price
                     float right
                     color #21BA45
+                &.active
+                    .title
+                        color rgba(0, 0, 0, 0.85)
+                    .description
+                        color rgba(0, 0, 0, 0.85)
             & > .message
-                padding 1em
+                padding 1em 1em
                 .header
-                    font-family Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif
+                    font-family 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif
                     font-size 1rem
-                    font-weight 700
-                    color rgba(0, 0, 0, .87)
+                    font-weight bold
+                    color rgba(0, 0, 0, 0.87)
                 .description
-                    margin-top .25rem
+                    margin-top 0.25rem
                     font-size 1em
-                    color rgba(0, 0, 0, .87)
+                    color rgba(0, 0, 0, 0.87)
             & > .action
                 display block
                 border-top none
                 background #F3F4F5
-                padding .92857143em 1em
-                color rgba(0, 0, 0, .87)
-                font-weight 700
+                padding 0.92857143em 1em
+                color rgba(0, 0, 0, 0.87)
+                font-weight bold
                 text-align center
         .action
             &:hover
                 background #E0E0E0
         &.selection
             .prompt
-                border-radius .28571429rem
+                border-radius 0.28571429rem
             & > .icon
                 &.input
                     & > .remove
@@ -118,10 +123,10 @@
                             left auto
                             opacity 0
                             color ''
-                            top 0
-                            right 0
-                            -webkit-transition color .1s ease, opacity .1s ease
-                            transition color .1s ease, opacity .1s ease
+                            top 0em
+                            right 0em
+                            -webkit-transition color 0.1s ease, opacity 0.1s ease
+                            transition color 0.1s ease, opacity 0.1s ease
                             &:hover
                                 opacity 1
                                 color #DB2828
@@ -129,7 +134,7 @@
                         &.remove
                             &.icon
                                 cursor pointer
-                                opacity .8
+                                opacity 0.8
                                 pointer-events auto
                     &:not([class*="left icon"])
                         & > .icon
@@ -146,69 +151,69 @@
                             content ''
                             top 50%
                             left 50%
-                            margin -.64285714em 0 0 -.64285714em
+                            margin -0.64285714em 0em 0em -0.64285714em
                             width 1.28571429em
                             height 1.28571429em
                             border-radius 500rem
-                            border .2em solid rgba(0, 0, 0, .1)
+                            border 0.2em solid rgba(0, 0, 0, 0.1)
                         &:after
                             position absolute
                             content ''
                             top 50%
                             left 50%
-                            margin -.64285714em 0 0 -.64285714em
+                            margin -0.64285714em 0em 0em -0.64285714em
                             width 1.28571429em
                             height 1.28571429em
-                            -webkit-animation button-spin .6s linear
-                            animation button-spin .6s linear
+                            -webkit-animation button-spin 0.6s linear
+                            animation button-spin 0.6s linear
                             -webkit-animation-iteration-count infinite
                             animation-iteration-count infinite
                             border-radius 500rem
                             border-color #767676 transparent transparent
                             border-style solid
-                            border-width .2em
-                            box-shadow 0 0 0 1px transparent
+                            border-width 0.2em
+                            box-shadow 0px 0px 0px 1px transparent
     &.category
         &.search
             & > .results
                 .category
                     background #F3F4F5
                     box-shadow none
-                    border-bottom 1px solid rgba(34, 36, 38, .1)
-                    -webkit-transition background .1s ease, border-color .1s ease
-                    transition background .1s ease, border-color .1s ease
+                    border-bottom 1px solid rgba(34, 36, 38, 0.1)
+                    -webkit-transition background 0.1s ease, border-color 0.1s ease
+                    transition background 0.1s ease, border-color 0.1s ease
                     &.active
                         background #F3F4F5
                         & > .name
-                            color rgba(0, 0, 0, .87)
+                            color rgba(0, 0, 0, 0.87)
                     &:last-child
                         border-bottom none
                         .result
                             &:last-child
-                                border-radius 0 0 .28571429rem
+                                border-radius 0em 0em 0.28571429rem 0em
                                 border-bottom none
                     &:first-child
                         .name
                             & + .result
-                                border-radius 0 .28571429rem 0 0
+                                border-radius 0em 0.28571429rem 0em 0em
                     .result
-                        background #FFF
+                        background #FFFFFF
                         margin-left 100px
-                        border-left 1px solid rgba(34, 36, 38, .15)
-                        border-bottom 1px solid rgba(34, 36, 38, .1)
-                        -webkit-transition background .1s ease, border-color .1s ease
-                        transition background .1s ease, border-color .1s ease
-                        padding .85714286em 1.14285714em
+                        border-left 1px solid rgba(34, 36, 38, 0.15)
+                        border-bottom 1px solid rgba(34, 36, 38, 0.1)
+                        -webkit-transition background 0.1s ease, border-color 0.1s ease
+                        transition background 0.1s ease, border-color 0.1s ease
+                        padding 0.85714286em 1.14285714em
                     & > .name
                         width 100px
-                        background 0 0
-                        font-family Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif
+                        background transparent
+                        font-family 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif
                         font-size 1em
                         float 1em
                         float left
-                        padding .4em 1em
-                        font-weight 700
-                        color rgba(0, 0, 0, .4)
+                        padding 0.4em 1em
+                        font-weight bold
+                        color rgba(0, 0, 0, 0.4)
             .results
                 width 28em
     &.fluid
@@ -217,10 +222,10 @@
                 width 100%
     &.mini
         &.search
-            font-size .78571429em
+            font-size 0.78571429em
     &.small
         &.search
-            font-size .92857143em
+            font-size 0.92857143em
     &.large
         &.search
             font-size 1.14285714em
@@ -234,27 +239,21 @@
         &.search
             font-size 1.71428571em
 
-.ui.category.search>.results .category .result:hover,
-.ui.search>.results .result:hover
+.ui.search > .results .result:hover, .ui.category.search > .results .category .result:hover
     background #F9FAFB
 
-.ui.category.search>.results .category .result.active,
-.ui.search>.results .result.active
+.ui.search > .results .result.active, .ui.category.search > .results .category .result.active
     position relative
-    border-left-color rgba(34, 36, 38, .1)
+    border-left-color rgba(34, 36, 38, 0.1)
     background #F3F4F5
     box-shadow none
 
-.ui.search>.results .result.active .description,
-.ui.search>.results .result.active .title
-    color rgba(0, 0, 0, .85)
-
-.ui[class*="left aligned"].search
-    & > .results
-        right auto
-        left 0
-
-.ui[class*="right aligned"].search
-    & > .results
-        right 0
-        left auto
+.ui
+    [class*="left aligned"].search
+        & > .results
+            right auto
+            left 0%
+    [class*="right aligned"].search
+        & > .results
+            right 0%
+            left auto

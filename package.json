@@ -1,7 +1,7 @@
 {
   "name": "semantic-ui-stylus",
-  "version": "1.0.0",
-  "description": "stylus port of semanticUI",
+  "version": "1.0.1",
+  "description": "stylus port of semanticUI v2.2.13",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",

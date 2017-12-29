@@ -1,10 +1,10 @@
 {
   "name": "semantic-ui-stylus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "ben eaves"
   ],
-  "description": "stylus port of semantic-ui",
+  "description": "stylus port of semantic-ui v2.2.13",
   "main": "semantic.styl",
   "keywords": [
     "stylus",

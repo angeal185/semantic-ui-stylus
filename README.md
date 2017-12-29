@@ -1,5 +1,5 @@
 # semantic-ui-stylus
-stylus port of semanticUI
+stylus port of semanticUI v2.2.13
 
 ### Installation
 

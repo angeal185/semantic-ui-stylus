@@ -1,56 +1,61 @@
 .ui
     &.header
         border none
-        margin calc(2rem - .14285714em) 0 1rem
-        padding 0
-        font-family Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif
-        font-weight 700
+        margin calc(2rem - 0.14285714em ) 0em 1rem
+        padding 0em 0em
+        font-family 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif
+        font-weight bold
         line-height 1.28571429em
         text-transform none
-        color rgba(0, 0, 0, .87)
+        color rgba(0, 0, 0, 0.87)
         &:first-child
-            margin-top -.14285714em
+            margin-top -0.14285714em
         &:last-child
-            margin-bottom 0
+            margin-bottom 0em
         .sub
             &.header
                 display block
-                font-weight 400
-                padding 0
-                margin 0
+                font-weight normal
+                padding 0em
+                margin 0em
+                font-size 1rem
                 line-height 1.2em
-                color rgba(0, 0, 0, .6)
+                color rgba(0, 0, 0, 0.6)
+                font-size 1rem
         & > .icon
             display table-cell
             opacity 1
             font-size 1.5em
-            padding-top .14285714em
+            padding-top 0em
             vertical-align middle
             & + .content
-                padding-left .75rem
+                padding-left 0.75rem
                 display table-cell
                 vertical-align middle
         .icon
             &:only-child
                 display inline-block
-                padding 0
-                margin-right .75rem
+                padding 0em
+                margin-right 0.75rem
         .content
             display inline-block
             vertical-align top
         .ui
             &.label
                 font-size ''
-                margin-left .5rem
+                margin-left 0.5rem
                 vertical-align middle
         & + p
-            margin-top 0
+            margin-top 0em
         &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)
             font-size 1.28571429em
     &.huge
         &.header
             min-height 1em
             font-size 2em
+            .sub
+                &.header
+                    font-size 1.14285714rem
         &.sub
             &.header
                 font-size 1em
@@ -63,9 +68,12 @@
     &.large
         &.header
             font-size 1.71428571em
+            .sub
+                &.header
+                    font-size 1.14285714rem
         &.sub
             &.header
-                font-size .92857143em
+                font-size 0.92857143em
         &.block
             &.header
                 font-size 1.14285714rem
@@ -78,61 +86,71 @@
     &.small
         &.header
             font-size 1.07142857em
+            .sub
+                &.header
+                    font-size 1rem
         &.sub
             &.header
-                font-size .78571429em
+                font-size 0.78571429em
         &.block
             &.header
-                font-size .92857143rem
+                font-size 0.92857143rem
         &.attached
             &.header
-                font-size .92857143em
+                font-size 0.92857143em
     &.tiny
         &.header
             font-size 1em
             .sub
                 &.header
-                    font-size .92857143rem
+                    font-size 0.92857143rem
         &.block
             &.header
-                font-size .85714286rem
+                font-size 0.85714286rem
         &.attached
             &.header
-                font-size .85714286em
+                font-size 0.85714286em
     &.sub
         &.header
-            padding 0
-            margin-bottom .14285714rem
-            font-weight 700
+            padding 0em
+            margin-bottom 0.14285714rem
+            font-weight bold
+            font-size 0.85714286em
             text-transform uppercase
             color ''
-            font-size .85714286em
+            font-size 0.85714286em
     &.icon
         &.header
             display inline-block
             text-align center
-            margin 2rem 0 1rem
+            margin 2rem 0em 1rem
             &:after
                 content ''
                 display block
-                height 0
+                height 0px
                 clear both
                 visibility hidden
             &:first-child
-                margin-top 0
+                margin-top 0em
             .icon
                 float none
                 display block
                 width auto
                 height auto
                 line-height 1
-                padding 0
+                padding 0em
                 font-size 3em
-                margin 0 auto .5rem
+                margin 0em auto 0.5rem
                 opacity 1
             .content
                 display block
-                padding 0
+                padding 0em
+            .circular
+                &.icon
+                    font-size 2em
+            .square
+                &.icon
+                    font-size 2em
             &.aligned
                 margin-left auto
                 margin-right auto
@@ -141,144 +159,144 @@
         &.icon
             &.header
                 .icon
-                    margin-bottom 0
+                    margin-bottom 0em
         &.header
             background #F3F4F5
-            padding .78571429rem 1rem
+            padding 0.78571429rem 1rem
             box-shadow none
             border 1px solid #D4D4D5
-            border-radius .28571429rem
+            border-radius 0.28571429rem
             &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)
                 font-size 1rem
     &.disabled
         &.header
-            opacity .45
+            opacity 0.45
     &.inverted
         &.header
-            color #FFF
+            color #FFFFFF
             .sub
                 &.header
-                    color rgba(255, 255, 255, .8)
+                    color rgba(255, 255, 255, 0.8)
         &.attached
             &.header
-                background -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05)) #545454
-                background linear-gradient(transparent, rgba(0, 0, 0, .05)) #545454
+                background #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05))
+                background #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.05))
                 box-shadow none
                 border-color transparent
         &.block
             &.header
-                background -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05)) #545454
-                background linear-gradient(transparent, rgba(0, 0, 0, .05)) #545454
+                background #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05))
+                background #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.05))
                 box-shadow none
                 border-bottom none
         &.red
             &.header
-                color #FF695E!important
+                color #FF695E !important
         &.orange
             &.header
-                color #FF851B!important
+                color #FF851B !important
         &.olive
             &.header
-                color #D9E778!important
+                color #D9E778 !important
         &.yellow
             &.header
-                color #FFE21F!important
+                color #FFE21F !important
         &.green
             &.header
-                color #2ECC40!important
+                color #2ECC40 !important
         &.teal
             &.header
-                color #6DFFFF!important
+                color #6DFFFF !important
         &.blue
             &.header
-                color #54C8FF!important
+                color #54C8FF !important
         &.violet
             &.header
-                color #A291FB!important
+                color #A291FB !important
         &.purple
             &.header
-                color #DC73FF!important
+                color #DC73FF !important
         &.pink
             &.header
-                color #FF8EDF!important
+                color #FF8EDF !important
         &.brown
             &.header
-                color #D67C1C!important
+                color #D67C1C !important
         &.grey
             &.header
-                color #DCDDDE!important
+                color #DCDDDE !important
         &.dividing
             &.header
-                border-bottom-color rgba(255, 255, 255, .1)
+                border-bottom-color rgba(255, 255, 255, 0.1)
     &.red
         &.header
-            color #DB2828!important
+            color #DB2828 !important
         &.dividing
             &.header
                 border-bottom 2px solid #DB2828
     &.orange
         &.header
-            color #F2711C!important
+            color #F2711C !important
         &.dividing
             &.header
                 border-bottom 2px solid #F2711C
     &.olive
         &.header
-            color #B5CC18!important
+            color #B5CC18 !important
         &.dividing
             &.header
                 border-bottom 2px solid #B5CC18
     &.yellow
         &.header
-            color #FBBD08!important
+            color #FBBD08 !important
         &.dividing
             &.header
                 border-bottom 2px solid #FBBD08
     &.green
         &.header
-            color #21BA45!important
+            color #21BA45 !important
         &.dividing
             &.header
                 border-bottom 2px solid #21BA45
     &.teal
         &.header
-            color #00B5AD!important
+            color #00B5AD !important
         &.dividing
             &.header
                 border-bottom 2px solid #00B5AD
     &.blue
         &.header
-            color #2185D0!important
+            color #2185D0 !important
         &.dividing
             &.header
                 border-bottom 2px solid #2185D0
     &.violet
         &.header
-            color #6435C9!important
+            color #6435C9 !important
         &.dividing
             &.header
                 border-bottom 2px solid #6435C9
     &.purple
         &.header
-            color #A333C8!important
+            color #A333C8 !important
         &.dividing
             &.header
                 border-bottom 2px solid #A333C8
     &.pink
         &.header
-            color #E03997!important
+            color #E03997 !important
         &.dividing
             &.header
                 border-bottom 2px solid #E03997
     &.brown
         &.header
-            color #A5673F!important
+            color #A5673F !important
         &.dividing
             &.header
                 border-bottom 2px solid #A5673F
     &.grey
         &.header
-            color #767676!important
+            color #767676 !important
         &.dividing
             &.header
                 border-bottom 2px solid #767676
@@ -299,20 +317,20 @@
                 width 100%
     &.fitted
         &.header
-            padding 0
+            padding 0em
     &.dividing
         &.header
-            padding-bottom .21428571rem
-            border-bottom 1px solid rgba(34, 36, 38, .15)
+            padding-bottom 0.21428571rem
+            border-bottom 1px solid rgba(34, 36, 38, 0.15)
             .sub
                 &.header
-                    padding-bottom .21428571rem
+                    padding-bottom 0.21428571rem
             .icon
-                margin-bottom 0
+                margin-bottom 0em
     &.attached
         &.header
-            background #FFF
-            padding .78571429rem 1rem
+            background #FFFFFF
+            padding 0.78571429rem 1rem
             margin-left -1px
             margin-right -1px
             box-shadow none
@@ -323,58 +341,67 @@
             &.header
                 background #F3F4F5
         &:not(.top):not(.bottom).header
-            margin-top 0
-            margin-bottom 0
+            margin-top 0em
+            margin-bottom 0em
             border-top none
-            border-radius 0
+            border-radius 0em
     &.top
         &.attached
             &.header
-                margin-bottom 0
-                border-radius .28571429rem .28571429rem 0 0
+                margin-bottom 0em
+                border-radius 0.28571429rem 0.28571429rem 0em 0em
     &.bottom
         &.attached
             &.header
-                margin-top 0
+                margin-top 0em
                 border-top none
-                border-radius 0 0 .28571429rem .28571429rem
+                border-radius 0em 0em 0.28571429rem 0.28571429rem
 
-.ui.header>.image:not(.icon),
-.ui.header>img
+.ui.header > .image:not(.icon), .ui.header > img
     display inline-block
-    margin-top .14285714em
+    margin-top 0.14285714em
     width 2.5em
     height auto
     vertical-align middle
 
-.ui.header>.image:not(.icon):only-child,
-.ui.header>img:only-child
-    margin-right .75rem
+.ui.header > .image:not(.icon):only-child, .ui.header > img:only-child
+    margin-right 0.75rem
 
-.ui.header>.image+.content,
-.ui.header>img+.content
-    padding-left .75rem
+.ui.header > img + .content, .ui.header > .image + .content
+    padding-left 0.75rem
     vertical-align middle
 
 h1
     &.ui
         &.header
             font-size 2rem
+            .sub
+                &.header
+                    font-size 1.14285714rem
 
 h2
     &.ui
         &.header
             font-size 1.71428571rem
+            .sub
+                &.header
+                    font-size 1.14285714rem
 
 h3
     &.ui
         &.header
             font-size 1.28571429rem
+            .sub
+                &.header
+                    font-size 1rem
 
 h4
     &.ui
         &.header
             font-size 1.07142857rem
+            .sub
+                &.header
+                    font-size 1rem
 
 h5
     &.ui
@@ -382,139 +409,117 @@ h5
             font-size 1rem
             .sub
                 &.header
-                    font-size .92857143rem
-
-h1.ui.header .sub.header,
-h2.ui.header .sub.header
-    font-size 1.14285714rem
-
-h3.ui.header .sub.header,
-h4.ui.header .sub.header
-    font-size 1rem
-
-.ui.huge.header .sub.header,
-.ui.large.header .sub.header
-    font-size 1.14285714rem
-
-.ui.header .sub.header,
-.ui.small.header .sub.header
-    font-size 1rem
-
-.ui.icon.header .circular.icon,
-.ui.icon.header .square.icon
-    font-size 2em
+                    font-size 0.92857143rem
 
 a
     &.ui
         &.red
             &.header
                 &:hover
-                    color #d01919!important
+                    color #d01919 !important
         &.inverted
             &.red
                 &.header
                     &:hover
-                        color #ff5144!important
+                        color #ff5144 !important
             &.orange
                 &.header
                     &:hover
-                        color #ff7701!important
+                        color #ff7701 !important
             &.olive
                 &.header
                     &:hover
-                        color #d8ea5c!important
+                        color #d8ea5c !important
             &.yellow
                 &.header
                     &:hover
-                        color #ffdf05!important
+                        color #ffdf05 !important
             &.green
                 &.header
                     &:hover
-                        color #22be34!important
+                        color #22be34 !important
             &.teal
                 &.header
                     &:hover
-                        color #54ffff!important
+                        color #54ffff !important
             &.blue
                 &.header
                     &:hover
-                        color #3ac0ff!important
+                        color #3ac0ff !important
             &.violet
                 &.header
                     &:hover
-                        color #8a73ff!important
+                        color #8a73ff !important
             &.purple
                 &.header
                     &:hover
-                        color #d65aff!important
+                        color #d65aff !important
             &.pink
                 &.header
                     &:hover
-                        color #ff74d8!important
+                        color #ff74d8 !important
             &.brown
                 &.header
                     &:hover
-                        color #c86f11!important
+                        color #c86f11 !important
             &.grey
                 &.header
                     &:hover
-                        color #cfd0d2!important
+                        color #cfd0d2 !important
         &.orange
             &.header
                 &:hover
-                    color #f26202!important
+                    color #f26202 !important
         &.olive
             &.header
                 &:hover
-                    color #a7bd0d!important
+                    color #a7bd0d !important
         &.yellow
             &.header
                 &:hover
-                    color #eaae00!important
+                    color #eaae00 !important
         &.green
             &.header
                 &:hover
-                    color #16ab39!important
+                    color #16ab39 !important
         &.teal
             &.header
                 &:hover
-                    color #009c95!important
+                    color #009c95 !important
         &.blue
             &.header
                 &:hover
-                    color #1678c2!important
+                    color #1678c2 !important
         &.violet
             &.header
                 &:hover
-                    color #5829bb!important
+                    color #5829bb !important
         &.purple
             &.header
                 &:hover
-                    color #9627ba!important
+                    color #9627ba !important
         &.pink
             &.header
                 &:hover
-                    color #e61a8d!important
+                    color #e61a8d !important
         &.brown
             &.header
                 &:hover
-                    color #975b33!important
+                    color #975b33 !important
         &.grey
             &.header
                 &:hover
-                    color #838383!important
+                    color #838383 !important
 
-.ui.center.aligned.header,
-.ui.centered.header
+.ui.centered.header, .ui.center.aligned.header
     text-align center
 
-.ui.floated.header,
-.ui[class*="left floated"].header
+.ui.floated.header, .ui[class*="left floated"].header
     float left
-    margin-top 0
-    margin-right .5em
+    margin-top 0em
+    margin-right 0.5em
 
 .ui[class*="right floated"].header
         float right
-        margin-top 0
-        margin-left .5em
+        margin-top 0em
+        margin-left 0.5em

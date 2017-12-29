@@ -1,33 +1,33 @@
 .ui
     &.table
         width 100%
-        background #FFF
-        margin 1em 0
-        border 1px solid rgba(34, 36, 38, .15)
+        background #FFFFFF
+        margin 1em 0em
+        border 1px solid rgba(34, 36, 38, 0.15)
         box-shadow none
-        border-radius .28571429rem
+        border-radius 0.28571429rem
         text-align left
-        color rgba(0, 0, 0, .87)
+        color rgba(0, 0, 0, 0.87)
         border-collapse separate
-        border-spacing 0
+        border-spacing 0px
         font-size 1em
         &:first-child
-            margin-top 0
+            margin-top 0em
         &:last-child
-            margin-bottom 0
+            margin-bottom 0em
         thead
             box-shadow none
             th
                 cursor auto
                 background #F9FAFB
                 text-align inherit
-                color rgba(0, 0, 0, .87)
-                padding .92857143em .78571429em
+                color rgba(0, 0, 0, 0.87)
+                padding 0.92857143em 0.78571429em
                 vertical-align inherit
                 font-style none
-                font-weight 700
+                font-weight bold
                 text-transform none
-                border-bottom 1px solid rgba(34, 36, 38, .1)
+                border-bottom 1px solid rgba(34, 36, 38, 0.1)
                 border-left none
             tr
                 & > th
@@ -36,23 +36,23 @@
                 &:first-child
                     & > th
                         &:first-child
-                            border-radius .28571429rem 0 0
+                            border-radius 0.28571429rem 0em 0em 0em
                         &:last-child
-                            border-radius 0 .28571429rem 0 0
+                            border-radius 0em 0.28571429rem 0em 0em
                         &:only-child
-                            border-radius .28571429rem .28571429rem 0 0
+                            border-radius 0.28571429rem 0.28571429rem 0em 0em
         tfoot
             box-shadow none
             th
                 cursor auto
-                border-top 1px solid rgba(34, 36, 38, .15)
+                border-top 1px solid rgba(34, 36, 38, 0.15)
                 background #F9FAFB
                 text-align inherit
-                color rgba(0, 0, 0, .87)
-                padding .78571429em
+                color rgba(0, 0, 0, 0.87)
+                padding 0.78571429em 0.78571429em
                 vertical-align middle
                 font-style normal
-                font-weight 400
+                font-weight normal
                 text-transform none
             tr
                 & > th
@@ -61,26 +61,26 @@
                 &:first-child
                     & > th
                         &:first-child
-                            border-radius 0 0 0 .28571429rem
+                            border-radius 0em 0em 0em 0.28571429rem
                         &:last-child
-                            border-radius 0 0 .28571429rem
+                            border-radius 0em 0em 0.28571429rem 0em
                         &:only-child
-                            border-radius 0 0 .28571429rem .28571429rem
+                            border-radius 0em 0em 0.28571429rem 0.28571429rem
         tr
             td
-                border-top 1px solid rgba(34, 36, 38, .1)
+                border-top 1px solid rgba(34, 36, 38, 0.1)
             &:first-child
                 td
                     border-top none
         td
-            padding .78571429em
+            padding 0.78571429em 0.78571429em
             text-align inherit
         & > .icon
             vertical-align baseline
             &:only-child
-                margin 0
+                margin 0em
         &.segment
-            padding 0
+            padding 0em
             &:after
                 display none
             &.stacked
@@ -90,12 +90,12 @@
             tr
                 td
                     &.selectable
-                        padding 0
+                        padding 0em
                         & > a
                             &:not(.ui)
                                 display block
                                 color inherit
-                                padding .78571429em
+                                padding 0.78571429em 0.78571429em
     &.structured
         &.table
             border-collapse collapse
@@ -107,8 +107,8 @@
             &.table
                 thead
                     th
-                        border-left 1px solid rgba(34, 36, 38, .15)
-                        border-right 1px solid rgba(34, 36, 38, .15)
+                        border-left 1px solid rgba(34, 36, 38, 0.15)
+                        border-right 1px solid rgba(34, 36, 38, 0.15)
         &.basic
             &.table
                 th
@@ -121,19 +121,26 @@
                     th
                         &:first-child
                             pointer-events none
-                            background 0 0
-                            font-weight 400
-                            color rgba(0, 0, 0, .4)
-                            box-shadow -1px -1px 0 1px #FFF
+                            background transparent
+                            font-weight normal
+                            color rgba(0, 0, 0, 0.4)
+                            box-shadow -1px -1px 0px 1px #FFFFFF
+                        &:nth-child(2)
+                            border-left 1px solid rgba(34, 36, 38, 0.15)
             tfoot
                 &:not(.full-width)
                     th
                         &:first-child
                             pointer-events none
-                            background 0 0
-                            font-weight rgba(0, 0, 0, .4)
+                            background transparent
+                            font-weight rgba(0, 0, 0, 0.4)
                             color normal
-                            box-shadow 1px 1px 0 1px #FFF
+                            box-shadow 1px 1px 0px 1px #FFFFFF
+                        &:nth-child(2)
+                            border-left 1px solid rgba(34, 36, 38, 0.15)
+            td
+                &:nth-child(2)
+                    border-left 1px solid rgba(34, 36, 38, 0.15)
     &.celled
         &.definition
             &.table
@@ -141,23 +148,23 @@
                     &:not(.full-width)
                         th
                             &:first-child
-                                box-shadow 0 -1px 0 1px #FFF
+                                box-shadow 0px -1px 0px 1px #FFFFFF
                 tfoot
                     &:not(.full-width)
                         th
                             &:first-child
-                                box-shadow 0 1px 0 1px #FFF
+                                box-shadow 0px 1px 0px 1px #FFFFFF
     &.fixed
         &.table
             table-layout fixed
     &.attached
         &.table
-            top 0
-            bottom 0
-            border-radius 0
-            margin 0 -1px
-            width calc(100% + 2px)
-            max-width calc(100% + 2px)
+            top 0px
+            bottom 0px
+            border-radius 0px
+            margin 0em -1px
+            width calc(100% + 2px )
+            max-width calc(100% + 2px )
             box-shadow none
             border 1px solid #D4D4D5
         & + .ui
@@ -166,7 +173,7 @@
                     &:not(.top)
                         border-top none
     &.table[class*="top attached"]:first-child
-        margin-top 0
+        margin-top 0em
     &.striped
         &.selectable
             &.selectable
@@ -176,64 +183,64 @@
                             tr
                                 &.active
                                     &:hover
-                                        background #EFEFEF!important
-                                        color rgba(0, 0, 0, .95)!important
+                                        background #EFEFEF !important
+                                        color rgba(0, 0, 0, 0.95) !important
     &.red
         &.table
-            border-top .2em solid #DB2828
+            border-top 0.2em solid #DB2828
     &.inverted
         &.red
             &.table
-                background-color #DB2828!important
-                color #FFF!important
+                background-color #DB2828 !important
+                color #FFFFFF !important
         &.orange
             &.table
-                background-color #F2711C!important
-                color #FFF!important
+                background-color #F2711C !important
+                color #FFFFFF !important
         &.yellow
             &.table
-                background-color #FBBD08!important
-                color #FFF!important
+                background-color #FBBD08 !important
+                color #FFFFFF !important
         &.olive
             &.table
-                background-color #B5CC18!important
-                color #FFF!important
+                background-color #B5CC18 !important
+                color #FFFFFF !important
         &.green
             &.table
-                background-color #21BA45!important
-                color #FFF!important
+                background-color #21BA45 !important
+                color #FFFFFF !important
         &.teal
             &.table
-                background-color #00B5AD!important
-                color #FFF!important
+                background-color #00B5AD !important
+                color #FFFFFF !important
         &.blue
             &.table
-                background-color #2185D0!important
-                color #FFF!important
+                background-color #2185D0 !important
+                color #FFFFFF !important
         &.violet
             &.table
-                background-color #6435C9!important
-                color #FFF!important
+                background-color #6435C9 !important
+                color #FFFFFF !important
         &.purple
             &.table
-                background-color #A333C8!important
-                color #FFF!important
+                background-color #A333C8 !important
+                color #FFFFFF !important
         &.pink
             &.table
-                background-color #E03997!important
-                color #FFF!important
+                background-color #E03997 !important
+                color #FFFFFF !important
         &.brown
             &.table
-                background-color #A5673F!important
-                color #FFF!important
+                background-color #A5673F !important
+                color #FFFFFF !important
         &.grey
             &.table
-                background-color #767676!important
-                color #FFF!important
+                background-color #767676 !important
+                color #FFFFFF !important
         &.black
             &.table
-                background-color #1B1C1D!important
-                color #FFF!important
+                background-color #1B1C1D !important
+                color #FFFFFF !important
         &.sortable
             &.table
                 thead
@@ -241,67 +248,67 @@
                         border-left-color transparent
                         border-right-color transparent
                         &.sorted
-                            background -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .15)
-                            background linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .15)
-                            color #fff
+                            background rgba(255, 255, 255, 0.15) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05))
+                            background rgba(255, 255, 255, 0.15) linear-gradient(transparent, rgba(0, 0, 0, 0.05))
+                            color #ffffff
                         &:hover
-                            background -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .08)
-                            background linear-gradient(transparent, rgba(0, 0, 0, .05)) rgba(255, 255, 255, .08)
-                            color #fff
+                            background rgba(255, 255, 255, 0.08) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05))
+                            background rgba(255, 255, 255, 0.08) linear-gradient(transparent, rgba(0, 0, 0, 0.05))
+                            color #ffffff
         &.table
-            background #333
-            color rgba(255, 255, 255, .9)
+            background #333333
+            color rgba(255, 255, 255, 0.9)
             border none
             th
-                background-color rgba(0, 0, 0, .15)
-                border-color rgba(255, 255, 255, .1)!important
-                color rgba(255, 255, 255, .9)
+                background-color rgba(0, 0, 0, 0.15)
+                border-color rgba(255, 255, 255, 0.1) !important
+                color rgba(255, 255, 255, 0.9) !important
             tr
                 td
-                    border-color rgba(255, 255, 255, .1)!important
+                    border-color rgba(255, 255, 255, 0.1) !important
         &.definition
             &.table
                 tr
                     td
                         &:first-child
-                            background rgba(255, 255, 255, .02)
-                            color #fff
+                            background rgba(255, 255, 255, 0.02)
+                            color #ffffff
     &.orange
         &.table
-            border-top .2em solid #F2711C
+            border-top 0.2em solid #F2711C
     &.yellow
         &.table
-            border-top .2em solid #FBBD08
+            border-top 0.2em solid #FBBD08
     &.olive
         &.table
-            border-top .2em solid #B5CC18
+            border-top 0.2em solid #B5CC18
     &.green
         &.table
-            border-top .2em solid #21BA45
+            border-top 0.2em solid #21BA45
     &.teal
         &.table
-            border-top .2em solid #00B5AD
+            border-top 0.2em solid #00B5AD
     &.blue
         &.table
-            border-top .2em solid #2185D0
+            border-top 0.2em solid #2185D0
     &.violet
         &.table
-            border-top .2em solid #6435C9
+            border-top 0.2em solid #6435C9
     &.purple
         &.table
-            border-top .2em solid #A333C8
+            border-top 0.2em solid #A333C8
     &.pink
         &.table
-            border-top .2em solid #E03997
+            border-top 0.2em solid #E03997
     &.brown
         &.table
-            border-top .2em solid #A5673F
+            border-top 0.2em solid #A5673F
     &.grey
         &.table
-            border-top .2em solid #767676
+            border-top 0.2em solid #767676
     &.black
         &.table
-            border-top .2em solid #1B1C1D
+            border-top 0.2em solid #1B1C1D
     &.one
         &.column
             &.table
@@ -377,27 +384,32 @@
             &.table
                 td
                     width 6.66666667%
+    &.sixteen
+        &.column
+            &.table
+                td
+                    width 6.25%
     &.sortable
         &.table
             thead
                 th
                     cursor pointer
                     white-space nowrap
-                    border-left 1px solid rgba(34, 36, 38, .15)
-                    color rgba(0, 0, 0, .87)
+                    border-left 1px solid rgba(34, 36, 38, 0.15)
+                    color rgba(0, 0, 0, 0.87)
                     &:first-child
                         border-left none
                     &:after
                         display none
                         font-style normal
-                        font-weight 400
+                        font-weight normal
                         text-decoration inherit
                         content ''
                         height 1em
                         width auto
-                        opacity .8
-                        margin 0 0 0 .5em
-                        font-family Icons
+                        opacity 0.8
+                        margin 0em 0em 0em 0.5em
+                        font-family 'Icons'
                     &.ascending
                         &:after
                             content '\f0d8'
@@ -405,126 +417,112 @@
                         &:after
                             content '\f0d7'
                     &:hover
-                        background rgba(0, 0, 0, .05)
-                        color rgba(0, 0, 0, .8)
+                        background rgba(0, 0, 0, 0.05)
+                        color rgba(0, 0, 0, 0.8)
                     &.sorted
-                        background rgba(0, 0, 0, .05)
-                        color rgba(0, 0, 0, .95)
+                        background rgba(0, 0, 0, 0.05)
+                        color rgba(0, 0, 0, 0.95)
                         &:after
                             display inline-block
                         &:hover
-                            background rgba(0, 0, 0, .05)
-                            color rgba(0, 0, 0, .95)
+                            background rgba(0, 0, 0, 0.05)
+                            color rgba(0, 0, 0, 0.95)
             th
                 &.disabled
                     &:hover
                         cursor auto
-                        color rgba(40, 40, 40, .3)
+                        color rgba(40, 40, 40, 0.3)
     &.collapsing
         &.table
             width auto
     &.basic
         &.table
-            background 0 0
-            border 1px solid rgba(34, 36, 38, .15)
+            background transparent
+            border 1px solid rgba(34, 36, 38, 0.15)
             box-shadow none
             th
-                background 0 0
+                background transparent
                 border-left none
             tbody
                 tr
-                    border-bottom 1px solid rgba(0, 0, 0, .1)
+                    border-bottom 1px solid rgba(0, 0, 0, 0.1)
             td
-                background 0 0
+                background transparent
         &.striped
             &.table
                 tbody
                     tr
                         &:nth-child(2n)
-                            background-color rgba(0, 0, 0, .05)!important
+                            background-color rgba(0, 0, 0, 0.05) !important
+    &.padded
+        &.table
+            th
+                padding-left 1em
+                padding-right 1em
     &.compact
         &.table
             th
-                padding-left .7em
-                padding-right .7em
+                padding-left 0.7em
+                padding-right 0.7em
             td
-                padding .5em .7em
+                padding 0.5em 0.7em
     &.small
         &.table
-            font-size .9em
+            font-size 0.9em
     &.large
         &.table
             font-size 1.1em
 
-.ui.table td,
-.ui.table th
-    -webkit-transition background .1s ease, color .1s ease
-    transition background .1s ease, color .1s ease
+.ui.table th, .ui.table td
+    -webkit-transition background 0.1s ease, color 0.1s ease
+    transition background 0.1s ease, color 0.1s ease
 
-@media only screen and (max-width:767px)
+@media only screen and (max-width: 767px)
     .ui
         &.table
             &:not(.unstackable)
                 width 100%
-                padding 0
+                padding 0em
+                thead
+                    display block
+                tfoot
+                    display block
                 tr
                     padding-top 1em
                     padding-bottom 1em
-                    box-shadow 0 -1px 0 0 rgba(0, 0, 0, .1) inset!important
+                    box-shadow 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important
         &.definition
             &.table
                 &:not(.unstackable)
                     thead
                         th
                             &:first-child
-                                box-shadow none!important
+                                box-shadow none !important
 
+    .ui.table:not(.unstackable) tbody, .ui.table:not(.unstackable) tr, .ui.table:not(.unstackable) tr > th, .ui.table:not(.unstackable) tr > td
+        width auto !important
+        display block !important
 
-@media only screen and (max-width:767px)     
-    .ui.table:not(.unstackable) tbody,
-    .ui.table:not(.unstackable) tr,
-    .ui.table:not(.unstackable) tr>td,
-    .ui.table:not(.unstackable) tr>th
-        width auto!important
-        display block!important
+    .ui.table:not(.unstackable) tr > th, .ui.table:not(.unstackable) tr > td
+        background none
+        border none !important
+        padding 0.25em 0.75em !important
+        box-shadow none !important
 
+    .ui.table:not(.unstackable) th:first-child, .ui.table:not(.unstackable) td:first-child
+        font-weight bold
 
-@media only screen and (max-width:767px)     
-    .ui.table:not(.unstackable) tfoot,
-    .ui.table:not(.unstackable) thead
-        display block
-
-
-@media only screen and (max-width:767px)     
-    .ui.table:not(.unstackable) tr>td,
-    .ui.table:not(.unstackable) tr>th
-        background 0 0
-        border none!important
-        padding .25em .75em!important
-        box-shadow none!important
-
-
-@media only screen and (max-width:767px)     
-    .ui.table:not(.unstackable) td:first-child,
-    .ui.table:not(.unstackable) th:first-child
-        font-weight 700
-
-.ui.table td .image,
-.ui.table td .image img,
-.ui.table th .image,
-.ui.table th .image img
+.ui.table th .image, .ui.table th .image img, .ui.table td .image, .ui.table td .image img
     max-width none
 
-.ui.structured.celled.table tr td,
-.ui.structured.celled.table tr th
-    border-left 1px solid rgba(34, 36, 38, .1)
-    border-right 1px solid rgba(34, 36, 38, .1)
+.ui.structured.celled.table tr th, .ui.structured.celled.table tr td
+    border-left 1px solid rgba(34, 36, 38, 0.1)
+    border-right 1px solid rgba(34, 36, 38, 0.1)
 
-.ui.definition.table tr td.definition,
-.ui.definition.table tr td:first-child:not(.ignored)
-    background rgba(0, 0, 0, .03)
-    font-weight 700
-    color rgba(0, 0, 0, .95)
+.ui.definition.table tr td:first-child:not(.ignored), .ui.definition.table tr td.definition
+    background rgba(0, 0, 0, 0.03)
+    font-weight bold
+    color rgba(0, 0, 0, 0.95)
     text-transform ''
     box-shadow ''
     text-align ''
@@ -532,316 +530,244 @@
     padding-left ''
     padding-right ''
 
-.ui.definition.table td:nth-child(2),
-.ui.definition.table tfoot:not(.full-width) th:nth-child(2),
-.ui.definition.table thead:not(.full-width) th:nth-child(2)
-    border-left 1px solid rgba(34, 36, 38, .15)
+.ui.table tr.positive, .ui.table td.positive
+    box-shadow 0px 0px 0px #A3C293 inset
+    background #FCFFF5 !important
+    color #2C662D !important
 
-.ui.table td.positive,
-.ui.table tr.positive
-    box-shadow 0 0 0 #A3C293 inset
-    background #FCFFF5!important
-    color #2C662D!important
+.ui.table tr.negative, .ui.table td.negative
+    box-shadow 0px 0px 0px #E0B4B4 inset
+    background #FFF6F6 !important
+    color #9F3A38 !important
 
-.ui.table td.error,
-.ui.table td.negative,
-.ui.table tr.error,
-.ui.table tr.negative
-    box-shadow 0 0 0 #E0B4B4 inset
-    background #FFF6F6!important
-    color #9F3A38!important
+.ui.table tr.error, .ui.table td.error
+    box-shadow 0px 0px 0px #E0B4B4 inset
+    background #FFF6F6 !important
+    color #9F3A38 !important
 
-.ui.table td.warning,
-.ui.table tr.warning
-    box-shadow 0 0 0 #C9BA9B inset
-    background #FFFAF3!important
-    color #573A08!important
+.ui.table tr.warning, .ui.table td.warning
+    box-shadow 0px 0px 0px #C9BA9B inset
+    background #FFFAF3 !important
+    color #573A08 !important
 
-.ui.table td.active,
-.ui.table tr.active
-    box-shadow 0 0 0 rgba(0, 0, 0, .87) inset
-    background #E0E0E0!important
-    color rgba(0, 0, 0, .87)!important
+.ui.table tr.active, .ui.table td.active
+    box-shadow 0px 0px 0px rgba(0, 0, 0, 0.87) inset
+    background #E0E0E0 !important
+    color rgba(0, 0, 0, 0.87) !important
 
-.ui.table tr td.disabled,
-.ui.table tr.disabled td,
-.ui.table tr.disabled:hover,
-.ui.table tr:hover td.disabled
+.ui.table tr.disabled td, .ui.table tr td.disabled, .ui.table tr.disabled:hover, .ui.table tr:hover td.disabled
     pointer-events none
-    color rgba(40, 40, 40, .3)
+    color rgba(40, 40, 40, 0.3)
 
+@media only screen and (max-width: 991px)
+    .ui[class*="tablet stackable"].table, .ui[class*="tablet stackable"].table tbody, .ui[class*="tablet stackable"].table tr, .ui[class*="tablet stackable"].table tr > th, .ui[class*="tablet stackable"].table tr > td
+        width 100% !important
+        display block !important
 
-@media only screen and (max-width:991px)     
-    .ui[class*="tablet stackable"].table,
-    .ui[class*="tablet stackable"].table tbody,
-    .ui[class*="tablet stackable"].table tr,
-    .ui[class*="tablet stackable"].table tr>td,
-    .ui[class*="tablet stackable"].table tr>th
-        width 100%!important
-        display block!important
-
-@media only screen and (max-width:991px)
     .ui[class*="tablet stackable"].table
-        padding 0
+        padding 0em
+        thead
+            display block
+        tfoot
+            display block
         tr
             padding-top 1em
             padding-bottom 1em
-            box-shadow 0 -1px 0 0 rgba(0, 0, 0, .1) inset!important
+            box-shadow 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important
     .ui
         &.definition[class*="tablet stackable"].table
-            thead
-                th
-                    &:first-child
-                        box-shadow none!important
+                thead
+                    th
+                        &:first-child
+                            box-shadow none !important
 
+    .ui[class*="tablet stackable"].table tr > th, .ui[class*="tablet stackable"].table tr > td
+        background none
+        border none !important
+        padding 0.25em 0.75em
+        box-shadow none !important
 
-@media only screen and (max-width:991px)     
-    .ui[class*="tablet stackable"].table tfoot,
-    .ui[class*="tablet stackable"].table thead
-        display block
-
-
-@media only screen and (max-width:991px)     
-    .ui[class*="tablet stackable"].table tr>td,
-    .ui[class*="tablet stackable"].table tr>th
-        background 0 0
-        border none!important
-        padding .25em .75em
-        box-shadow none!important
-
-.ui.table [class*="left aligned"],
-.ui.table[class*="left aligned"]
+.ui.table[class*="left aligned"], .ui.table [class*="left aligned"]
     text-align left
 
-.ui.table [class*="center aligned"],
-.ui.table[class*="center aligned"]
+.ui.table[class*="center aligned"], .ui.table [class*="center aligned"]
     text-align center
 
-.ui.table [class*="right aligned"],
-.ui.table[class*="right aligned"]
+.ui.table[class*="right aligned"], .ui.table [class*="right aligned"]
     text-align right
 
-.ui.table [class*="top aligned"],
-.ui.table[class*="top aligned"]
+.ui.table[class*="top aligned"], .ui.table [class*="top aligned"]
     vertical-align top
 
-.ui.table [class*="middle aligned"],
-.ui.table[class*="middle aligned"]
+.ui.table[class*="middle aligned"], .ui.table [class*="middle aligned"]
     vertical-align middle
 
-.ui.table [class*="bottom aligned"],
-.ui.table[class*="bottom aligned"]
+.ui.table[class*="bottom aligned"], .ui.table [class*="bottom aligned"]
     vertical-align bottom
 
-.ui.table td.collapsing,
-.ui.table th.collapsing
+.ui.table th.collapsing, .ui.table td.collapsing
     width 1px
     white-space nowrap
 
-.ui.fixed.table td,
-.ui.fixed.table th
+.ui.fixed.table th, .ui.fixed.table td
     overflow hidden
     text-overflow ellipsis
 
-.ui.selectable.table tbody tr:hover,
-.ui.table tbody tr td.selectable:hover
-    background rgba(0, 0, 0, .05)!important
-    color rgba(0, 0, 0, .95)!important
+.ui.selectable.table tbody tr:hover, .ui.table tbody tr td.selectable:hover
+    background rgba(0, 0, 0, 0.05) !important
+    color rgba(0, 0, 0, 0.95) !important
 
-.ui.inverted.table tbody tr td.selectable:hover,
-.ui.selectable.inverted.table tbody tr:hover
-    background rgba(255, 255, 255, .08)!important
-    color #fff!important
+.ui.selectable.inverted.table tbody tr:hover, .ui.inverted.table tbody tr td.selectable:hover
+    background rgba(255, 255, 255, 0.08) !important
+    color #ffffff !important
 
-.ui.selectable.table tr.error:hover,
-.ui.selectable.table tr:hover td.error,
-.ui.table tr td.selectable.error:hover
-    background #ffe7e7!important
-    color #943634!important
+.ui.selectable.table tr.error:hover, .ui.table tr td.selectable.error:hover, .ui.selectable.table tr:hover td.error
+    background #ffe7e7 !important
+    color #943634 !important
 
-.ui.selectable.table tr.warning:hover,
-.ui.selectable.table tr:hover td.warning,
-.ui.table tr td.selectable.warning:hover
-    background #fff4e4!important
-    color #493107!important
+.ui.selectable.table tr.warning:hover, .ui.table tr td.selectable.warning:hover, .ui.selectable.table tr:hover td.warning
+    background #fff4e4 !important
+    color #493107 !important
 
-.ui.selectable.table tr.active:hover,
-.ui.selectable.table tr:hover td.active,
-.ui.table tr td.selectable.active:hover
-    background #E0E0E0!important
-    color rgba(0, 0, 0, .87)!important
+.ui.selectable.table tr.active:hover, .ui.table tr td.selectable.active:hover, .ui.selectable.table tr:hover td.active
+    background #E0E0E0 !important
+    color rgba(0, 0, 0, 0.87) !important
 
-.ui.selectable.table tr.positive:hover,
-.ui.selectable.table tr:hover td.positive,
-.ui.table tr td.selectable.positive:hover
-    background #f7ffe6!important
-    color #275b28!important
+.ui.selectable.table tr.positive:hover, .ui.table tr td.selectable.positive:hover, .ui.selectable.table tr:hover td.positive
+    background #f7ffe6 !important
+    color #275b28 !important
 
-.ui.selectable.table tr.negative:hover,
-.ui.selectable.table tr:hover td.negative,
-.ui.table tr td.selectable.negative:hover
-    background #ffe7e7!important
-    color #943634!important
+.ui.selectable.table tr.negative:hover, .ui.table tr td.selectable.negative:hover, .ui.selectable.table tr:hover td.negative
+    background #ffe7e7 !important
+    color #943634 !important
 
-.ui[class*="top attached"].table
-    bottom 0
-    margin-bottom 0
-    top 0
-    margin-top 1em
-    border-radius .28571429rem .28571429rem 0 0
+.ui
+    [class*="top attached"].table
+        bottom 0px
+        margin-bottom 0em
+        top 0px
+        margin-top 1em
+        border-radius 0.28571429rem 0.28571429rem 0em 0em
+    [class*="bottom attached"].table
+        bottom 0px
+        margin-top 0em
+        top 0px
+        margin-bottom 1em
+        box-shadow none, none
+        border-radius 0em 0em 0.28571429rem 0.28571429rem
+        &:last-child
+            margin-bottom 0em
 
-.ui[class*="bottom attached"].table
-    bottom 0
-    margin-top 0
-    top 0
-    margin-bottom 1em
-    box-shadow none, none
-    border-radius 0 0 .28571429rem .28571429rem
-    &:last-child
-        margin-bottom 0
+.ui.striped.table > tr:nth-child(2n), .ui.striped.table tbody tr:nth-child(2n)
+    background-color rgba(0, 0, 50, 0.02)
 
-.ui.striped.table tbody tr:nth-child(2n),
-.ui.striped.table>tr:nth-child(2n)
-    background-color rgba(0, 0, 50, .02)
+.ui.inverted.striped.table > tr:nth-child(2n), .ui.inverted.striped.table tbody tr:nth-child(2n)
+    background-color rgba(255, 255, 255, 0.05)
 
-.ui.inverted.striped.table tbody tr:nth-child(2n),
-.ui.inverted.striped.table>tr:nth-child(2n)
-    background-color rgba(255, 255, 255, .05)
-
-.ui.table [class*="single line"],
-.ui.table[class*="single line"]
+.ui.table[class*="single line"], .ui.table [class*="single line"]
+    white-space nowrap
     white-space nowrap
 
-.ui.sixteen.column.table td,
-.ui.table td.one.wide,
-.ui.table th.one.wide
+.ui.table th.one.wide, .ui.table td.one.wide
     width 6.25%
 
-.ui.table td.two.wide,
-.ui.table th.two.wide
+.ui.table th.two.wide, .ui.table td.two.wide
     width 12.5%
 
-.ui.table td.three.wide,
-.ui.table th.three.wide
+.ui.table th.three.wide, .ui.table td.three.wide
     width 18.75%
 
-.ui.table td.four.wide,
-.ui.table th.four.wide
+.ui.table th.four.wide, .ui.table td.four.wide
     width 25%
 
-.ui.table td.five.wide,
-.ui.table th.five.wide
+.ui.table th.five.wide, .ui.table td.five.wide
     width 31.25%
 
-.ui.table td.six.wide,
-.ui.table th.six.wide
+.ui.table th.six.wide, .ui.table td.six.wide
     width 37.5%
 
-.ui.table td.seven.wide,
-.ui.table th.seven.wide
+.ui.table th.seven.wide, .ui.table td.seven.wide
     width 43.75%
 
-.ui.table td.eight.wide,
-.ui.table th.eight.wide
+.ui.table th.eight.wide, .ui.table td.eight.wide
     width 50%
 
-.ui.table td.nine.wide,
-.ui.table th.nine.wide
+.ui.table th.nine.wide, .ui.table td.nine.wide
     width 56.25%
 
-.ui.table td.ten.wide,
-.ui.table th.ten.wide
+.ui.table th.ten.wide, .ui.table td.ten.wide
     width 62.5%
 
-.ui.table td.eleven.wide,
-.ui.table th.eleven.wide
+.ui.table th.eleven.wide, .ui.table td.eleven.wide
     width 68.75%
 
-.ui.table td.twelve.wide,
-.ui.table th.twelve.wide
+.ui.table th.twelve.wide, .ui.table td.twelve.wide
     width 75%
 
-.ui.table td.thirteen.wide,
-.ui.table th.thirteen.wide
+.ui.table th.thirteen.wide, .ui.table td.thirteen.wide
     width 81.25%
 
-.ui.table td.fourteen.wide,
-.ui.table th.fourteen.wide
+.ui.table th.fourteen.wide, .ui.table td.fourteen.wide
     width 87.5%
 
-.ui.table td.fifteen.wide,
-.ui.table th.fifteen.wide
+.ui.table th.fifteen.wide, .ui.table td.fifteen.wide
     width 93.75%
 
-.ui.table td.sixteen.wide,
-.ui.table th.sixteen.wide
+.ui.table th.sixteen.wide, .ui.table td.sixteen.wide
     width 100%
 
-.ui.sortable.table thead th.sorted,
-.ui.sortable.table thead th.sorted:hover
+.ui.sortable.table thead th.sorted, .ui.sortable.table thead th.sorted:hover
     -webkit-user-select none
     -moz-user-select none
     -ms-user-select none
     user-select none
 
-.ui.inverted.table tr td.disabled,
-.ui.inverted.table tr.disabled td,
-.ui.inverted.table tr.disabled:hover td,
-.ui.inverted.table tr:hover td.disabled
+.ui.inverted.table tr.disabled td, .ui.inverted.table tr td.disabled, .ui.inverted.table tr.disabled:hover td, .ui.inverted.table tr:hover td.disabled
     pointer-events none
-    color rgba(225, 225, 225, .3)
+    color rgba(225, 225, 225, 0.3)
 
-.ui.inverted.definition.table tfoot:not(.full-width) th:first-child,
-.ui.inverted.definition.table thead:not(.full-width) th:first-child
-    background #FFF
+.ui.inverted.definition.table tfoot:not(.full-width) th:first-child, .ui.inverted.definition.table thead:not(.full-width) th:first-child
+    background #FFFFFF
 
-.ui.basic.table tfoot,
-.ui.basic.table thead
+.ui.basic.table thead, .ui.basic.table tfoot
     box-shadow none
 
-.ui[class*="very basic"].table
-        border none
-        &:not(.sortable):not(.striped)
-            thead
-                tr
-                    &:first-child
-                        th
-                            padding-top 0
-                            
-.ui[class*="very padded"].table
+.ui
+    [class*="very basic"].table
+    border none
+    &:not(.sortable):not(.striped)
+        thead
+            tr
+                &:first-child
+                    th
+                        padding-top 0em
+    [class*="very padded"].table
         th
             padding-left 1.5em
             padding-right 1.5em
         td
-            padding 1.5em
-            
-.ui[class*="very compact"].table
+            padding 1.5em 1.5em
+    [class*="very compact"].table
         th
-            padding-left .6em
-            padding-right .6em
+            padding-left 0.6em
+            padding-right 0.6em
         td
-            padding .4em .6em
+            padding 0.4em 0.6em
 
-.ui[class*="very basic"].table:not(.sortable):not(.striped) td,
-.ui[class*="very basic"].table:not(.sortable):not(.striped) th
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th, .ui[class*="very basic"].table:not(.sortable):not(.striped) td
     padding ''
 
-.ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child,
-.ui[class*="very basic"].table:not(.sortable):not(.striped) th:first-child
-    padding-left 0
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:first-child, .ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child
+    padding-left 0em
 
-.ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child,
-.ui[class*="very basic"].table:not(.sortable):not(.striped) th:last-child
-    padding-right 0
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:last-child, .ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child
+    padding-right 0em
 
-.ui.celled.table tr td,
-.ui.celled.table tr th
-    border-left 1px solid rgba(34, 36, 38, .1)
+.ui.celled.table tr th, .ui.celled.table tr td
+    border-left 1px solid rgba(34, 36, 38, 0.1)
 
-.ui.celled.table tr td:first-child,
-.ui.celled.table tr th:first-child
+.ui.celled.table tr th:first-child, .ui.celled.table tr td:first-child
     border-left none
 
-.ui.padded.table td,
-.ui.padded.table th
-    padding 1em
+.ui.padded.table th, .ui.padded.table td
+    padding 1em 1em
